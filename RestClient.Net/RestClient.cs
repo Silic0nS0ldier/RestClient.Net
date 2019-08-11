@@ -215,11 +215,6 @@ namespace RestClientDotNet
         {
             return Call<T>(queryString, HttpVerb.Get, contentType, null, cancellationToken);
         }
-
-        public void Dispose()
-        {
-            _HttpClient.Dispose();
-        }
         #endregion
 
         #region Post
